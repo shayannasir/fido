@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Payments from './Payments';
+import Sidebar from './Sidebar';
 
 class Header extends Component {
   renderContent() {
@@ -16,13 +17,17 @@ class Header extends Component {
         );
       default:
         return [
-          <li key="1">
+          <li key="1" stye={{ margin: '0 10px', padding: '0 10px' }}>
+            <Link to={'/surveys'}>Dashboard</Link>
+          </li>,
+          <li key="2" style={{ margin: '0 10px', padding: '0 10px' }}>
             <Payments />
           </li>,
-          <li key="2" style={{ margin: '0 10px' }}>
+
+          <li key="3" style={{ margin: '0 10px', padding: '0 10px' }}>
             Credits: {this.props.auth.credits}
           </li>,
-          <li key="3">
+          <li key="4">
             <a href="/api/logout">Logout</a>
           </li>
         ];
@@ -31,19 +36,21 @@ class Header extends Component {
 
   render() {
     return (
-      <nav className="grey darken-4 z-depth-3">
-        <div className="container">
-          <div className="nav-wrapper">
-            <Link
-              to={this.props.auth ? '/surveys' : '/'}
-              className="left brand-logo"
-            >
-              Emaily
-            </Link>
-            <ul className="right hide-on-small">{this.renderContent()}</ul>
+      <div className="navbar-fixed" style={{ zIndex: '9999' }}>
+        <nav className="grey darken-4 z-depth-3">
+          <div className="container">
+            <div className="nav-wrapper">
+              <Sidebar />
+              <Link to={'/'} className="brand-logo">
+                FIDO
+              </Link>
+              <ul className="right hide-on-med-and-down">
+                {this.renderContent()}
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     );
   }
 }

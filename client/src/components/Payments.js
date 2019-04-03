@@ -15,7 +15,7 @@ class Payments extends Component {
         description="$5 for 5 Emaily credits."
         panelLabel="Pay "
       >
-        <button className="btn waves-effect z-depth-2 lighten-4">
+        <button className="btn waves-effect z-depth-3 lighten-3 ">
           Add Credits
         </button>
       </StripeCheckout>
