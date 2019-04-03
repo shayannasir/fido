@@ -31,7 +31,7 @@ class Header extends Component {
 
   render() {
     return (
-      <nav>
+      <nav className="grey darken-4 z-depth-3">
         <div className="container">
           <div className="nav-wrapper">
             <Link
