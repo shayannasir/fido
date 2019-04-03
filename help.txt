@@ -1,0 +1,5 @@
+Key points to remember:
+
+-MongoDb on mLabs. Might neend to migrate it in the future.
+-Must change the HHTP post url in the mail settings of sendgrid before moving to prod or changing the domain of the application.
+-Activate stripe account for allowing actual payments
