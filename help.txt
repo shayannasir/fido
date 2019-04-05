@@ -7,3 +7,8 @@ Key points to remember:
 -While moving from dev to prod:  Must change the HTTP post url in the mail settings of sendgrid before moving to prod or changing the domain of the application.
 *for dev: https://unaaagi.localtunnel.me/api/surveys/webhooks
 *for prod: https://boiling-garden-26733.herokuapp.com/api/surveys/webhooks
+
+-while changing domain(eg. from boiling-garden-26733 to f-i-d-o): 
+*change post http url at sendgrid
+*change redirect url and authorised url at google
+*change REDIRECT_URL at heroku
