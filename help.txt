@@ -4,8 +4,6 @@ Key points to remember:
 
 -Activate stripe account for allowing actual payments
 
-While moving from dev to prod:
-
---Must change the HHTP post url in the mail settings of sendgrid before moving to prod or changing the domain of the application.
--modify the yes/no route in surveyTemplate
--
+-While moving from dev to prod:  Must change the HTTP post url in the mail settings of sendgrid before moving to prod or changing the domain of the application.
+*for dev: https://unaaagi.localtunnel.me/api/surveys/webhooks
+*for prod: https://boiling-garden-26733.herokuapp.com/api/surveys/webhooks
