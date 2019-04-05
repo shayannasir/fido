@@ -9,15 +9,13 @@ module.exports = survey => {
           <p>Please answer the following question:</p>
           <p>${survey.body}</p>
           <div>
-            <a href="${keys.redirectDomain}api/${survey.id}/yes">Yes</a>
+            <a href="${keys.redirectDomain}/api/${survey.id}/yes">Yes</a>
           </div>
           <div>
-            <a href="${keys.redirectDomain}api/${survey.id}/no">No</a>
+            <a href="${keys.redirectDomain}/api/${survey.id}/no">No</a>
           </div>
         </div>
       </body>
     </html>
   `;
 };
-
-// changed line 12 and 14 from '/api' to 'api'
