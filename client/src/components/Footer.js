@@ -1,5 +1,6 @@
 import React from 'react';
 import './resources/footer.css';
+import sg_logo_w from './resources/goat_w.png';
 
 const Landing = () => {
   return (
@@ -8,7 +9,7 @@ const Landing = () => {
         <h6 className="center cyan-text" style={{ marginBottom: '40px' }}>
           Having second thoughts ?{' '}
           <a
-            href="mailto:sshayann7@gmail.com?subject=FIDO%20Survey%20not%20found%20issue&"
+            href="mailto:fido@scrapegoat.tech?subject=FIDO%20Survey%20not%20found%20issue&"
             className="red-text text-darken-1"
             style={{ fontSize: '1.2em' }}
           >
@@ -101,7 +102,7 @@ const Landing = () => {
               </li>
               <li>
                 <a
-                  href="mailto:sshayann7@gmail.com?subject=FIDO%20Survey%20not%20found%20issue&"
+                  href="mailto:fido@scrapegoat.tech?subject=FIDO%20Survey%20not%20found%20issue&"
                   class="social-icon"
                 >
                   {' '}
@@ -111,13 +112,13 @@ const Landing = () => {
             </ul>
             <p>
               Or, simply{' '}
-              <a href="mailto:sshayann7@gmail.com?subject=FIDO%20Survey%20not%20found%20issue&">
+              <a href="mailto:fido@scrapegoat.tech?subject=FIDO%20Survey%20not%20found%20issue&">
                 mail
               </a>{' '}
               us at{' '}
               <span className="teal-text text-darken-1">
                 {' '}
-                info@scrapegoat.tech
+                fido@scrapegoat.tech
               </span>
             </p>
           </div>
@@ -126,9 +127,15 @@ const Landing = () => {
       <div className="divider grey darken-4" />
       <div class="footer-copyright" style={{ paddingBottom: '20px' }}>
         <div class="container">
-          FIDO ©<span>{new Date().getFullYear()}</span>
+          <div className="left">
+            {' '}
+            FIDO ©<span>{new Date().getFullYear()}</span>
+          </div>
+          <a href="https://www.scrapegoat.tech/" id="sg">
+            <img src={sg_logo_w} alt="scrapegoat" className="center" />
+          </a>
           <span className="right">
-            Created and maintained by{' '}
+            Created by{' '}
             <a href="https://github.com/shayannasir" className="teal-text">
               Shayan Nasir
             </a>

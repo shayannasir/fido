@@ -101,7 +101,7 @@ export default class Landing extends Component {
                   <td>Unlimited**</td>
                 </tr>
                 <tr>
-                  <td>24*7 Support</td>
+                  <td>24x7 Support</td>
                   <td>
                     <i className="material-icons teal-text">check</i>
                   </td>
@@ -197,7 +197,7 @@ export default class Landing extends Component {
               <p className="flow-text">
                 Now, the coolest thing:{' '}
                 <span className="teal-text text-darken-2">
-                  One Credit costs Rs. 50 only,
+                  One Credit costs &#8377; 50 only,
                 </span>{' '}
                 and{' '}
                 <span className="teal-text text-darken-2">
@@ -245,7 +245,7 @@ export default class Landing extends Component {
                     "The Pie Charts make it so easy to read the responses. Will
                     be sending more Surveys very soon."
                     <p>
-                      <em>&mdash; Areeb Shami from Linkage Marketing</em>
+                      <em>&mdash; Areeb Shamsi from Linkage Marketing</em>
                     </p>
                   </p>
                 </div>

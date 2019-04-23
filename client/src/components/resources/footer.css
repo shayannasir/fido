@@ -137,3 +137,26 @@ ul.social-icons {
 .social-icons a {
   font-size: 1.2em;
 }
+
+#sg {
+  margin-left: 40%;
+  transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+}
+
+#sg:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 600px) {
+  #sg {
+    margin-left: 18%;
+  }
+}

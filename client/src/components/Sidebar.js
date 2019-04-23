@@ -4,7 +4,7 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Payments from './Payments';
-import logo from './resources/logo2-01.png';
+import logo from './resources/logo.png';
 
 import 'materialize-css/dist/css/materialize.min.css';
 

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Payments from './Payments';
 import Sidebar from './Sidebar';
-import logo from './resources/logo2-01.png';
+import logo from './resources/logo.png';
 
 class Header extends Component {
   renderContent() {
