@@ -4,6 +4,7 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Payments from './Payments';
+import logo from './resources/logo2-01.png';
 
 import 'materialize-css/dist/css/materialize.min.css';
 
@@ -69,12 +70,7 @@ class Sidebar extends Component {
                 />
               </div>
               <Link to={'/'} className="sidenav-close">
-                <h3
-                  style={{ marginTop: '0', paddingBottom: '8%' }}
-                  className="grey-text text-lighten-4"
-                >
-                  Emaily
-                </h3>
+                <img src={logo} alt="logo" />
               </Link>
             </div>
           </li>

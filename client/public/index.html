@@ -14,13 +14,34 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <style>
+      .feature-slider .carousel-item {
+        min-height: 320px;
+        min-width: 300px !important;
+      }
+    </style>
 
     <title>FIDO - Email Surveys & achieve Customer Experience Solution.</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-
+    <script>
+      setTimeout(() => {
+        var elem = document.querySelector('.carousel-slider');
+        var instance = M.Carousel.init(elem, {
+          fullWidth: true
+        });
+      }, 2000);
+      setTimeout(() => {
+        var elem = document.querySelector('.feature-slider');
+        var instance = M.Carousel.init(elem, {
+          dist: -100,
+          shift: 20,
+          numVisible: 6
+        });
+      }, 2000);
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   </body>
 </html>

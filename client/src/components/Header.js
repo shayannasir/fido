@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Payments from './Payments';
 import Sidebar from './Sidebar';
+import logo from './resources/logo2-01.png';
 
 class Header extends Component {
   renderContent() {
@@ -42,7 +43,9 @@ class Header extends Component {
             <div className="nav-wrapper">
               <Sidebar />
               <Link to={'/'} className="brand-logo">
-                FIDO
+                <div>
+                  <img src={logo} alt="logo" className="responsive-img" />
+                </div>
               </Link>
               <ul className="right hide-on-med-and-down">
                 {this.renderContent()}

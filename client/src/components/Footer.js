@@ -1,10 +1,21 @@
 import React from 'react';
-import './footer.css';
+import './resources/footer.css';
 
 const Landing = () => {
   return (
     <footer class="page-footer grey darken-4">
       <div class="container">
+        <h6 className="center cyan-text" style={{ marginBottom: '40px' }}>
+          Having second thoughts ?{' '}
+          <a
+            href="mailto:sshayann7@gmail.com?subject=FIDO%20Survey%20not%20found%20issue&"
+            className="red-text text-darken-1"
+            style={{ fontSize: '1.2em' }}
+          >
+            Mail
+          </a>{' '}
+          us after you log in and we'll help you try FIDO for free !
+        </h6>
         <div class="row">
           <div class=" links col l4 s6">
             <b>
@@ -12,17 +23,17 @@ const Landing = () => {
             </b>
             <ul>
               <li>
-                <a class="grey-text " href="#!">
+                <a class="grey-text " href="#features">
                   About Us
                 </a>
               </li>
               <li>
-                <a class="grey-text " href="#!">
+                <a class="grey-text " href="#features">
                   Why Us
                 </a>
               </li>
               <li>
-                <a class="grey-text " href="#!">
+                <a class="grey-text " href="#testimonials">
                   Customers
                 </a>
               </li>
@@ -34,22 +45,22 @@ const Landing = () => {
             </b>
             <ul>
               <li>
-                <a class="grey-text" href="#!">
+                <a class="grey-text" href="#features">
                   Features
                 </a>
               </li>
               <li>
-                <a class="grey-text " href="#!">
+                <a class="grey-text " href="#pricing">
                   Plans and Pricing
                 </a>
               </li>
               <li>
-                <a class="grey-text " href="#!">
+                <a class="grey-text " href="/auth/google">
                   Try Us
                 </a>
               </li>
               <li>
-                <a class="grey-text " href="#!">
+                <a class="grey-text " href="/auth/google">
                   Create an Account
                 </a>
               </li>
@@ -59,13 +70,16 @@ const Landing = () => {
             <h4 class="_14">Follow us on</h4>
             <ul class="social-icons">
               <li>
-                <a href="https://www.facebook.com" class="social-icon">
+                <a
+                  href="https://www.facebook.com/shayanevil"
+                  class="social-icon"
+                >
                   {' '}
                   <i class="fa fa-facebook" />
                 </a>
               </li>
               <li>
-                <a href="https://www.twitter.com" class="social-icon">
+                <a href="https://twitter.com/shayannasir" class="social-icon">
                   {' '}
                   <i class="fa fa-twitter" />
                 </a>
@@ -77,18 +91,35 @@ const Landing = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com" class="social-icon">
+                <a
+                  href="https://www.linkedin.com/in/syedshayannasir/"
+                  class="social-icon"
+                >
                   {' '}
                   <i class="fa fa-linkedin" />
                 </a>
               </li>
               <li>
-                <a href="https://www.google.com" class="social-icon">
+                <a
+                  href="mailto:sshayann7@gmail.com?subject=FIDO%20Survey%20not%20found%20issue&"
+                  class="social-icon"
+                >
                   {' '}
                   <i class="fa fa-google-plus" />
                 </a>
               </li>
             </ul>
+            <p>
+              Or, simply{' '}
+              <a href="mailto:sshayann7@gmail.com?subject=FIDO%20Survey%20not%20found%20issue&">
+                mail
+              </a>{' '}
+              us at{' '}
+              <span className="teal-text text-darken-1">
+                {' '}
+                info@scrapegoat.tech
+              </span>
+            </p>
           </div>
         </div>
       </div>
@@ -97,7 +128,7 @@ const Landing = () => {
         <div class="container">
           FIDO ©<span>{new Date().getFullYear()}</span>
           <span className="right">
-            Create and maintained by{' '}
+            Created and maintained by{' '}
             <a href="https://github.com/shayannasir" className="teal-text">
               Shayan Nasir
             </a>
