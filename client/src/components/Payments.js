@@ -7,10 +7,10 @@ class Payments extends Component {
   render() {
     return (
       <StripeCheckout
-        amount={500}
+        amount={25000}
         token={token => this.props.handleToken(token)}
         stripeKey={process.env.REACT_APP_STRIPE_KEY}
-        currency="USD"
+        currency="INR"
         name="FIDO"
         description="&#8377; 250 for 5 FIDO credits."
         panelLabel="Pay "
